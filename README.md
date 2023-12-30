@@ -95,50 +95,6 @@ $ bundle exec jekyll serve
 ```
 Start the server locally at http://127.0.0.1:4000/ or http://localhost:4000/
 
-### For MacOS :
-Run the following in your terminal :
-
-1. Install Homebrew
-
-`/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
-
-2. Install churby and ruby-install with Homebrew
-
-`brew install chruby ruby-install`
-
-3. Install latest ruby version 
-
-`ruby-install ruby`
-
-4. This will take a few minutes, and once it’s done, configure your shell to automatically use chruby:
-
-```sh
-echo "source $(brew --prefix)/opt/chruby/share/chruby/chruby.sh" >> ~/.zshrc
-echo "source $(brew --prefix)/opt/chruby/share/chruby/auto.sh" >> ~/.zshrc
-echo "chruby ruby-3.1.2" >> ~/.zshrc
-```
-If you’re using Bash, replace *.zshrc* with *.bash_profile*.
-
-Quit and relaunch Terminal, then check that everything is working:
-
-`$ ruby -v`
-ruby 3.1.2p20 (2022-04-12 revision 4491bb740a) [x86_64-darwin21]
-
-5. Install latest gems
-
-```s
-$ gem install jekyll bundler
-
-$ bundler -v
-Bundler version 2.3.23
-
-$ bundle update
-
-$ bundle exec jekyll -v 
-jekyll 4.2.2
-
-$ bundle exec jekyll serve --livereload
-```
 
 
 ### Security 
@@ -149,12 +105,6 @@ We use codeQL and dependabot alerts for vulnerabality analysis & fixes.
 $ bundle audit
 ```
 
-### Deploy your devlopr-jekyll blog - One Click Deploy
-
-[![Deploy with ZEIT Now](https://zeit.co/button)](https://zeit.co/new/project?template=https://github.com/sujaykundu777/devlopr-jekyll)
-[![Deploy with Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/sujaykundu777/devlopr-jekyll)
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/sujaykundu777/devlopr-jekyll)
-
 ### Github Actions
 
 This Project has actions to auto deploy jekyll to github pages and firebase. The deployment target can be set by editing the `DEPLOY_STRATEGY` file. Valid values are:
@@ -164,14 +114,7 @@ This Project has actions to auto deploy jekyll to github pages and firebase. The
   * `FIREBASE_TOKEN`: your firebase token. you can get this by running `firebase login:ci` with the firebase cli.
   * `FIREBASE_PROJECT_ID`: the project id of the project you just created
 
-### Demo (Hosted Apps)
 
-- Github Pages Demo - [here](https://sanketkundu.github.io/)
-- Firebase Demo - [here](https://devlopr.web.app)
-- Netlify Demo - [here](https://devlopr.netlify.com)
-- Vercel Demo - [here](https://devlopr-jekyll.vercel.app/#/)
-- Heroku Demo - [here](https://devlopr-jekyll.herokuapp.com)
-- AWS Amplify Demo - [here](https://master.d3t30wwddt6jju.amplifyapp.com/)
 
 #### Features :
 
@@ -189,13 +132,7 @@ This Project has actions to auto deploy jekyll to github pages and firebase. The
 - Hosting Support for [Github Pages](https://pages.github.com), [Netlify](https://netlify.com), [Vercel](https://vercel.com), [Heroku](https://heroku.com), [AWS Amplify](aws.amplify.com), [Firebase](https://firebase.com)
 - CI/CD Support using [Travis CI](https://sujaykundu.com/blog/deploy-jekyll-blog-using-github-pages-and-travis-ci/)
 
-#### Jekyll Admin
-You can easily manage the site locally using the Jekyll admin : [http://localhost:4000/admin](http://localhost:4000/admin)
 
-![Jekyll Admin](https://github.com/sujaykundu777/devlopr-jekyll/blob/master/assets/img/jekyll-admin.PNG?raw=true)
-
-
-You can check out for all changelogs [here](https://devlopr.olvy.co/)
 
 ## Pull the latest changes
 
@@ -291,19 +228,6 @@ Contributions are more than just welcome. Fork this repo and create a new branch
 
 - 5.Create new Pull Request
 
-## Support this Project:
-
-Back this project by Donating to our [Open Collective](https://opencollective.com/devlopr-jekyll/donate) or if you like my work [Buymeacoffee](https://buymeacoffee.com/sujaykundu).
-
-Thanks to all our Backers ! [Become a Backer](https://opencollective.com/devlopr-jekyll/donate)
-
-<a href="https://opencollective.com/devlopr-jekyll#backers" target="_blank"><img src="https://opencollective.com/devlopr-jekyll/backers.svg?width=890" /></a>
-
-<a href="https://opencollective.com/devlopr-jekyll#backers" target="_blank"><img src="https://opencollective.com/devlopr-jekyll/tiers/backer.svg?avatarHeight=36" /></a>
-
-### For Help :
-
-You can contact me, if you need any help via [Email](mailto:sujaykundu777@gmail.com). If you like the project. Don't forget to :star: !
 
 ## Licence
 
